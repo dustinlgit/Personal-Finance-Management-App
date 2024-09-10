@@ -7,8 +7,21 @@
     <title>Get Started</title>
 </head>
 <body>
-    <label for="bank-info">Upload your bank sheet:</label><br>
-    <input type="file" id="bank-info" name="bank-info"/>
-    <script src="bank_info_script.js"></script>
+   
+    <div class="dropdown">
+        <button class="dropdown-button">+</button>
+        <div class="dropdown-content">
+            <ul>
+                <li><button class="dropdown-choice1">Populate with Preset Categories</button></li>
+                <li><button class="dropdown-choice2">Add New Category</button></li>
+                <li><button class="dropdown-choice3">Import Bank Excel File</button></li>
+            </ul>
+        </div>
+    </div>
+    <script src="dropdown_sign.js"></script>
+
+
+    <div class="container" id="category-container"></div>
+    <script src="populate_boxes.js"></script>
 </body>
 </html>

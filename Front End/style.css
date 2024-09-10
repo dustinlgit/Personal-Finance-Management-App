@@ -1,68 +1,70 @@
 body{
     background-color:rgb(220, 215, 215);
 }
-
-.landing-h1 {
-    font-size: 90px;
-    width: 600px;
-    padding: 10px;
-    margin-left: 70px;
-    margin-top: 100px;
-    position: relative;
-    left: -100%;
-    opacity: 0;
-    animation: slide-in-left 2s forwards;
+.dropdown{
+    margin-top: 400px;
 }
 
-.landing-h2{
-    font-size: 30px;
-    color:steelblue;
-    width:650px;
-    margin-left: 750px;
-    margin-top: -450px;
-}
-
-.link-to-button{
-    background-color: #1c87c9; 
-    border: none; 
-    color: white; 
-    padding: 20px 34px; 
-    text-align: center; 
-    text-decoration: none; 
-    display: inline-block; 
-    font-size: 20px; 
-    margin-left: 950px;
-    margin-top: 100px;
+.dropdown-button{
+    background-color: #f1f1f1;
+    color: #444;
     cursor: pointer;
-    border-radius: 15px;
+    padding: 10px;
+    width: 45px;
+    border: none;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.4s;
+}
+.dropdown-content {
+    display: none;
+    overflow: hidden;
+    padding: 0 18px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    width: 200px;
+    border-radius: 30px;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+.dropdown-content li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+.dropdown-choice1,
+.dropdown-choice2,
+.dropdown-choice3{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
 }
 
-.slide-together{
-    position: relative;
-    right: 100%;
-    opacity: 0;
-    animation: slide-in-right 2s forwards;
+#category-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #f1f1f1;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-
-@keyframes slide-in-left {
-    from {
-        left: -100%;
-        opacity: 0;  
-    }
-    to {
-        left: 0;    
-        opacity: 1; 
-    }
-}
-
-@keyframes slide-in-right {
-    from{
-        right:-100%;
-        opacity: 0;
-    }
-    to{
-        right:0;
-        opacity: 1;
-    }
+.box:hover {
+    background-color: #e0e0e0;
 }
