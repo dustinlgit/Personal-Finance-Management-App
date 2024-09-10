@@ -10,8 +10,8 @@ body {
 
 .dropdown {
     position: absolute;
-    left: 20px; /* Position from the left edge of the page */
-    top: 20px; /* Position from the top edge of the page */
+    left: 20px;
+    top: 20px;
 }
 
 .dropdown-button {
@@ -61,7 +61,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 80px; /* Space between the dropdown button and the chart */
+    margin-left: 80px; 
     width: 400px;
     height: 400px;
 }
