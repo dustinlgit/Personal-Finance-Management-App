@@ -1,11 +1,20 @@
-body{
-    background-color:rgb(220, 215, 215);
-}
-.dropdown{
-    margin-top: 400px;
+body {
+    background-color: rgb(220, 215, 215);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
 }
 
-.dropdown-button{
+.dropdown {
+    position: absolute;
+    left: 20px; /* Position from the left edge of the page */
+    top: 20px; /* Position from the top edge of the page */
+}
+
+.dropdown-button {
     background-color: #f1f1f1;
     color: #444;
     cursor: pointer;
@@ -17,6 +26,7 @@ body{
     font-size: 18px;
     transition: 0.4s;
 }
+
 .dropdown-content {
     display: none;
     overflow: hidden;
@@ -26,22 +36,34 @@ body{
     width: 200px;
     border-radius: 30px;
 }
+
 .dropdown-content ul {
     list-style-type: none;
     padding: 0;
 }
+
 .dropdown-content li {
     padding: 8px 0;
     border-bottom: 1px solid #ddd;
 }
+
 .dropdown-choice1,
 .dropdown-choice2,
-.dropdown-choice3{
+.dropdown-choice3 {
     background: none;
     border: none;
     cursor: pointer;
     padding: 0;
     text-align: center;
+}
+
+.chart-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 80px; /* Space between the dropdown button and the chart */
+    width: 400px;
+    height: 400px;
 }
 
 #category-container {
@@ -51,6 +73,7 @@ body{
     justify-content: center;
     padding: 20px;
 }
+
 .box {
     width: 200px;
     height: 200px;
@@ -58,6 +81,7 @@ body{
     border: 2px solid #ccc;
     border-radius: 10px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2em;
@@ -67,4 +91,16 @@ body{
 
 .box:hover {
     background-color: #e0e0e0;
+}
+
+.category-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.box-total {
+    font-size: 1em;
+    color: #333;
+    margin-top: 5px;
 }

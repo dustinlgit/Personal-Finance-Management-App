@@ -7,7 +7,8 @@
     <title>Get Started</title>
 </head>
 <body>
-   
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+
     <div class="dropdown">
         <button class="dropdown-button">+</button>
         <div class="dropdown-content">
@@ -18,10 +19,14 @@
             </ul>
         </div>
     </div>
+
+    <div class="chart-container">
+        <canvas id="incomeBreakdownChart"></canvas>
+    </div>
+
     <script src="dropdown_sign.js"></script>
-
-
+    <script src="pie_chart.js"></script>
     <div class="container" id="category-container"></div>
     <script src="populate_boxes.js"></script>
-</body>
+</body> 
 </html>
